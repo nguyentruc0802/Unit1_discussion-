@@ -31,3 +31,9 @@ Your reflection should be approximately 150–200 words and address the followin
 2. What challenges did you encounter, and how did you overcome them?
 3. Compare OOP to procedural programming.
 4. Discuss the benefits of maintainability and reusability and apply this managing overhead, practical application development, and future use.
+
+Reflection
+
+Completing this smart-home ecosystem assignment deepened my understanding of object-oriented programming (OOP) in Python. I mastered method overriding and the use of super().__init__()to extend parent class constructors. Visualizing namespaces through __dict__clarified how Python dynamically manages class and instance attributes. Additionally, I learned the critical difference between shallow and deep copying when dealing with mutable nested data like sensor zone lists.
+My primary challenge was managing how nested lists behave during a shallow copy. I initially expected the copied object to be completely isolated, but modifying the original list inadvertently altered the copy. I overcame this by studying the copymodule and implementing deepcopyto create recursive, independent object duplicates.
+Compared to procedural programming , which structures code linearly around top-down functions, OOP groups data and behaviors into cohesive objects. This provides massive benefits for reusability and maintainability . In practical application development, if a new smart device needs to be added, I can simply inherit from SmartDeviceinstead of rewriting basic setup code. This lowers future development overhead, simplifies debugging, and ensures scalable future use.
